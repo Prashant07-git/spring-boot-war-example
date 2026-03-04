@@ -17,13 +17,11 @@ public class HelloWorldApplication extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloWorldApplication.class);
+        SpringApplication.run(HelloWorldApplication.class, args);
     }
-
 
     @RequestMapping("/")
     String helloWorld() {
         return "Welcome to my Online Learning Classes - Jenkins by Shikhar";
     }
-
 }
